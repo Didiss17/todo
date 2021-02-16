@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import NewTodo from "./components/NewTodo";
-import Todo from "./components/Todo"
 import 'bootstrap/dist/css/bootstrap.css';
-import Home from "./pages/Home"
-import Contact from "./pages/Contact"
+import store from './store';
+import { Provider } from 'react-redux'
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

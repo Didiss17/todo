@@ -8,8 +8,10 @@ import {
 } from "react-router-dom";
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Story from './pages/Story';
 import Header from "./Layouts/Header";
 import Footer from "./Layouts/Footer";
+import Cars from "./pages/Car"
 
 function App() {
   return (
@@ -24,8 +26,14 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/">
+          <Route path="/story">
+            <Story />
+          </Route>
+          <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/cars">
+            <Cars/>
           </Route>
        
         </Switch>

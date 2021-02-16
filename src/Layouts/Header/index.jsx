@@ -10,7 +10,7 @@ const index = (props) => {
         <Nav className="mr-auto">
           <Nav.Link href=""><Link to="/home">Home</Link></Nav.Link>
           <Nav.Link href=""><Link to="/contact">Contact</Link></Nav.Link>
-         
+          <Nav.Link href=""><Link to="/story">Story</Link></Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
