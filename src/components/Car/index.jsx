@@ -15,10 +15,13 @@ function Car(props) {
           <Card.Text>
           <span>{props.description}</span>
           </Card.Text>
+          <div className="btn">
           <Button  variant="primary" id={props.cle} onClick={props.click}>Delete</Button>
+          <Button  variant="primary" id={props.mykey} onClick={props.upclick} >Update</Button>
+          </div>
         </Card.Body>
       </Card>
-    </div>
+    </div>  
   );
 }
 

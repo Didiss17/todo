@@ -11,7 +11,7 @@ function AddCar(props) {
       <Form.Control size="lg" id='description' type="text" placeholder="Large text" onChange={props.change} value={props.description}/>
       <h1>Image</h1>
       <Form.Control size="lg" id='image' type="text" placeholder="Large text" onChange={props.change} value={props.image}/>
-      <Button style={{marginTop: "10px"}} variant="primary" onClick={props.clickme}>ADD CAR</Button>
+      <Button style={{marginTop: "10px"}} variant="primary" onClick={props.clickme} id={props.mych}> {props.btnlabel} </Button>
 
 
     </div>
